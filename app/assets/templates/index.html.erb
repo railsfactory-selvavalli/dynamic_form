@@ -1,0 +1,40 @@
+<div ng-controller='DynamicFormCtrl'>
+  <!--<dynamic-form template="formTemplate"
+        ng-model="formData"
+        ng-submit="processForm()">
+    </dynamic-form>
+		
+		
+		<form sf-schema="schema" sf-form="form" sf-model="model"></form>-->
+		
+		<div style="width:100%">
+			<div style="width:75%;float:left;">
+			<div class="ui-widget-content">
+ <ol data-drop="true" ng-model='list1' jqyoui-droppable>
+ <li ng-repeat="item in list1 track by $index" ng-show="item.label" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="list1" jqyoui-draggable="{index: {{$index}},animate:true, deepCopy: true}" ><div class="btn btn-info btn-draggable"><span data-ng-hide="editMode" ng-click='editMode = true; editAppKey(item)'>{{item.label}}</span> <input type="text" ng-show="editMode" ng-model="item.label" ng-required /> <button type="submit" ng-show="editMode" ng-click="editMode = false" class="btn btn-default">Save</button></div></li>
+                <li class="placeholder" ng-hide="hideMe()">Add your items here</li>
+            </ol> 
+		<button ng-click="getFormFields(list1);">OK</button>
+			</div>
+
+    <pre>Hash: {{list1}}</pre>
+			</div>
+			<div style="width:20%;float:left;">
+			<div class="ui-widget-content">
+            <ol >
+   <li ng-repeat="item in list4 track by $index" ng-show="item.label" data-drag="true" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" ng-model="list4" jqyoui-draggable="{index: {{$index}},animate:true, placeholder: 'keep', deepCopy: true}">
+                  <div class="btn btn-info btn-draggable">{{item.label}}
+                </div>							
+								
+								</li>
+								
+            </ol>
+        </div> 
+			</div>
+		</div>
+		
+</div>
+<style>
+ol li {padding: 10px 0;}
+
+</style>
