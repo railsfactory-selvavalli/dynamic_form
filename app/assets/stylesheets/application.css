@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+
+#form-wrapper{margin: 30px 0 0 20px;width: 100%;}
+#save-form-list{float: left;width: 75%;}
+#form-data-list{  float: left;margin-left: 10px; width: 20%;}
+ol li {padding: 10px 0;}
+ol{list-style: outside none none;}
+img {cursor: pointer;}
+.over-rapper{   border: medium solid #49afcd; height: 50px;padding: 10px; width: 95%;}
+.highlight {border: medium dashed #49afcd!important;}
+.actions{width:100%;margin: 10px;text-align: center;}

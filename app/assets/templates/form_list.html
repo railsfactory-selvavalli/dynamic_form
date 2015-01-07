@@ -1,7 +1,7 @@
 <div ng-controller='DynamicFormCtrl' ng-init="getFormLists()">
-<div ng-repeat="form in form_lists">
-	<ol>
-	<a href="" ng-bind="form.name" ng-click="showForm(form)"></a>
-	</ol>
-</div>
+	<div ng-repeat="form in form_lists">
+		<ol>
+			<a href="" ng-bind="form.name" ng-click="showForm(form)"></a>
+		</ol>
+	</div>
 </div>
