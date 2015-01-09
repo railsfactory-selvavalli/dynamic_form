@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require angular
+//= require ui-bootstrap-tpls-0.11.0.min.js
 //= require angular-dragdrop
 //= require dynamic-forms
 //= require angular-sanitize.min
